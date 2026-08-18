@@ -9,7 +9,44 @@
   <meta property="og:title" content="DBSV Studios — Som &amp; Vídeo Profissional" />
   <meta property="og:description" content="Damos voz e imagem à sua marca. Produção de som e vídeo para empresas modernas." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dbsv-studios.github.io/" />
+  <meta property="og:locale" content="pt_PT" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DBSV Studios — Som &amp; Vídeo Profissional" />
+  <meta name="twitter:description" content="Produção audiovisual profissional para empresas em Paços de Ferreira e região." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200" />
+  <link rel="canonical" href="https://dbsv-studios.github.io/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "DBSV Studios",
+    "url": "https://dbsv-studios.github.io/",
+    "logo": "https://dbsv-studios.github.io/assets/img/logo-dbsv.png",
+    "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200",
+    "description": "Produção profissional de som, vídeo e fotografia para empresas, lojas e marcas.",
+    "email": "dbsvproducoes@outlook.com",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Paços de Ferreira e raio de 50 km",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paços de Ferreira",
+        "addressCountry": "PT"
+      }
+    },
+    "serviceType": [
+      "Produção de vídeo",
+      "Fotografia profissional",
+      "Produção de som",
+      "Edição e pós-produção",
+      "Conteúdo para redes sociais",
+      "Cobertura de eventos",
+      "Criação de sites"
+    ]
+  }
+  </script>
   <title>DBSV Studios — Som &amp; Vídeo Profissional</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
@@ -267,7 +304,7 @@
     .faq-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; align-items: start; }
     .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 0; }
     .faq-item { border-bottom: 1px solid var(--grey2); }
-    .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; cursor: pointer; }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 22px 0; cursor: pointer; background: none; border: 0; color: inherit; text-align: left; font: inherit; }
     .faq-q h3 { font-weight: 500; font-size: 0.95rem; line-height: 1.4; letter-spacing: 0.5px; }
     .faq-toggle { width: 28px; height: 28px; border: 1px solid var(--grey2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; color: var(--gold); transition: transform 0.3s; }
     .faq-item.open .faq-toggle { transform: rotate(45deg); }
@@ -408,7 +445,11 @@
 .portfolio-card{
   border-color:rgba(201,168,76,0.22) !important;
 }
-</style>
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+  </style>
 
 </head>
 <body>
@@ -428,7 +469,7 @@
     <li><a href="#contacto">Contacto</a></li>
   </ul>
   <a href="#contacto" class="nav-cta">Contactar</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -497,42 +538,42 @@
   <div class="services-grid reveal">
     <div class="service-card">
       <span class="service-num">01</span>
-      <span class="service-icon">🎬</span>
+      <span class="service-icon" aria-hidden="true">🎬</span>
       <h3>Vídeo Promocional</h3>
       <p>Vídeos curtos e impactantes para redes sociais, website e campanhas publicitárias. Storytelling visual que converte.</p>
       <span class="service-tag">Instagram · TikTok · YouTube</span>
     </div>
     <div class="service-card">
       <span class="service-num">02</span>
-      <span class="service-icon">📸</span>
+      <span class="service-icon" aria-hidden="true">📸</span>
       <h3>Fotografia Profissional</h3>
       <p>Sessões fotográficas para produto, espaço e equipa. Imagens que comunicam a identidade e o valor da sua marca.</p>
       <span class="service-tag">Produto · Espaço · Pessoas</span>
     </div>
     <div class="service-card">
       <span class="service-num">03</span>
-      <span class="service-icon">🎙️</span>
+      <span class="service-icon" aria-hidden="true">🎙️</span>
       <h3>Produção de Som</h3>
       <p>Gravação de locução, jingles, podcasts e audiobranding. Som profissional que reforça a identidade sonora da sua marca.</p>
       <span class="service-tag">Jingles · Podcasts · Locução</span>
     </div>
     <div class="service-card">
       <span class="service-num">04</span>
-      <span class="service-icon">✂️</span>
+      <span class="service-icon" aria-hidden="true">✂️</span>
       <h3>Edição &amp; Pós-Produção</h3>
       <p>Montagem, correção de cor, efeitos e motion graphics. Transformamos imagens brutas em conteúdo polido e profissional.</p>
       <span class="service-tag">Color Grade · VFX · Grafismo</span>
     </div>
     <div class="service-card">
       <span class="service-num">05</span>
-      <span class="service-icon">📱</span>
+      <span class="service-icon" aria-hidden="true">📱</span>
       <h3>Conteúdo para Redes Sociais</h3>
       <p>Produção contínua de conteúdo adaptado a cada plataforma. Mantenha a sua presença digital ativa e atraente.</p>
       <span class="service-tag">Reels · Stories · Posts</span>
     </div>
     <div class="service-card">
       <span class="service-num">06</span>
-      <span class="service-icon">🎥</span>
+      <span class="service-icon" aria-hidden="true">🎥</span>
       <h3>Cobertura de Eventos</h3>
       <p>Captação de vídeo e fotografia em eventos corporativos, inaugurações, conferências e momentos especiais.</p>
       <span class="service-tag">Eventos · Conferências · Lançamentos</span>
@@ -540,7 +581,7 @@
     
         <div class="service-card">
       <span class="service-num">07</span>
-      <span class="service-icon">💻</span>
+      <span class="service-icon" aria-hidden="true">💻</span>
       <h3>Criação de Sites</h3>
       <p>Desenvolvemos sites profissionais, modernos e responsivos para apresentar o seu negócio online e atrair novos clientes.</p>
       <span class="service-tag">Sites · Landing Pages · Portfólios</span>
@@ -595,7 +636,7 @@
     <a href="#contacto" class="btn-secondary" style="align-self:flex-end">Ver Todos os Projetos →</a>
   </div>
   <div class="video-grid reveal">
-    <div class="video-item" data-video="https://www.youtube.com/embed/HG0RWyoNlBo">
+    <div class="video-item" data-video="https://www.youtube.com/embed/HG0RWyoNlBo" role="button" tabindex="0" aria-label="Abrir vídeo: Óptica Sebastiana — Freamunde — campanha de lançamento">
       <img class="video-thumb" src="https://img.youtube.com/vi/HG0RWyoNlBo/maxresdefault.jpg" alt="Ótica Sebastiana — Freamunde" loading="lazy" />
       <div class="video-overlay">
         <div class="play-btn"></div>
@@ -603,7 +644,7 @@
         <span class="video-label">ÓPTICA SEBASTIANA — FREAMUNDE — CAMPANHA DE LANÇAMENTO</span>
       </div>
     </div>
-    <div class="video-item" data-video="https://www.youtube.com/embed/S0hN8oZoOtM">
+    <div class="video-item" data-video="https://www.youtube.com/embed/S0hN8oZoOtM" role="button" tabindex="0" aria-label="Abrir vídeo: Fogo Preso — Intro para Concerto">
       <img class="video-thumb" src="https://img.youtube.com/vi/S0hN8oZoOtM/maxresdefault.jpg" alt="Fogo Preso — Intro Cinematográfica" loading="lazy" />
       <div class="video-overlay">
         <div class="play-btn"></div>
@@ -615,10 +656,10 @@
 </section>
 
 <!-- VIDEO MODAL -->
-<div class="modal-overlay" id="videoModal">
+<div class="modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-label="Reprodutor de vídeo">
   <div class="modal-box">
-    <button class="modal-close" id="modalClose">✕</button>
-    <iframe id="modalIframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <button class="modal-close" id="modalClose" type="button" aria-label="Fechar vídeo">✕</button>
+    <iframe id="modalIframe" src="" title="Vídeo DBSV Studios" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -638,28 +679,28 @@
   </div>
   <div class="audio-features reveal">
     <div class="audio-feat">
-      <div class="feat-icon">🎵</div>
+      <div class="feat-icon" aria-hidden="true">🎵</div>
       <div class="feat-text">
         <h4>Jingles &amp; Identidade Sonora</h4>
         <p>Composição e gravação de músicas e sons que ficam na memória dos seus clientes.</p>
       </div>
     </div>
     <div class="audio-feat">
-      <div class="feat-icon">🎤</div>
+      <div class="feat-icon" aria-hidden="true">🎤</div>
       <div class="feat-text">
         <h4>Locução Profissional</h4>
         <p>Vozes profissionais em Português Europeu para anúncios, vídeos e apresentações corporativas.</p>
       </div>
     </div>
     <div class="audio-feat">
-      <div class="feat-icon">🎧</div>
+      <div class="feat-icon" aria-hidden="true">🎧</div>
       <div class="feat-text">
         <h4>Podcast &amp; Rádio</h4>
         <p>Gravação, edição e masterização de podcasts e spots publicitários para rádio.</p>
       </div>
     </div>
     <div class="audio-feat">
-      <div class="feat-icon">🔊</div>
+      <div class="feat-icon" aria-hidden="true">🔊</div>
       <div class="feat-text">
         <h4>Som Ambiente &amp; Pós-Produção</h4>
         <p>Tratamento e mistura de áudio para vídeos, eliminação de ruído e masterização final.</p>
@@ -673,7 +714,7 @@
     <div class="divider"></div>
     <div class="som-grid">
       <div class="som-placeholder">
-        <span class="som-icon">🎙️</span>
+        <span class="som-icon" aria-hidden="true">🎙️</span>
         <p>Em breve — trabalhos de produção sonora</p>
       </div>
     </div>
@@ -754,45 +795,45 @@
     </div>
     <div class="faq-list reveal">
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" aria-expanded="false">
           <h3>Como funciona a primeira visita?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
         <div class="faq-a">A primeira visita é totalmente gratuita e sem compromisso. Deslocamo-nos ao seu estabelecimento, conhecemos o espaço e o negócio, e fazemos algumas fotografias e vídeos de amostra. Só apresentamos orçamento depois de mostrarmos os resultados.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" aria-expanded="false">
           <h3>Em quanto tempo recebo os conteúdos?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
         <div class="faq-a">O prazo de entrega depende do volume e complexidade do projeto. Normalmente, um vídeo promocional está pronto em 5 a 7 dias úteis após a captação. Para pacotes mensais, mantemos um calendário editorial acordado com o cliente.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" aria-expanded="false">
           <h3>Os conteúdos ficam prontos para publicar nas redes?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
         <div class="faq-a">Sim. Todos os conteúdos são entregues nos formatos ideais para cada plataforma: formato quadrado, vertical (9:16) para Reels e Stories, e horizontal para YouTube ou website. Não precisa de fazer mais nada a não ser publicar.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" aria-expanded="false">
           <h3>Trabalham com qualquer tipo de negócio?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
         <div class="faq-a">Trabalhamos com negócios locais de todos os sectores: restaurantes, clínicas, ginásios, lojas de moda, imobiliárias, salões de beleza, oficinas, estabelecimentos de hotelaria e muito mais. Adaptamos sempre a abordagem ao contexto de cada cliente.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" aria-expanded="false">
           <h3>Posso contratar apenas fotografia ou apenas vídeo?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
         <div class="faq-a">Claro que sim. Os nossos pacotes são personalizáveis. Pode contratar apenas sessões de fotografia, apenas produção de vídeo, apenas som, ou qualquer combinação. Tudo é discutido e acordado previamente.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
+        <button class="faq-q" type="button" aria-expanded="false">
           <h3>A DBSV Studios desloca-se ao nosso local?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
         <div class="faq-a">Sim, na grande maioria dos casos deslocamo-nos ao seu espaço. Trabalhamos em toda a região do Porto e arredores. Para projetos fora desta área, analisamos caso a caso e incluímos eventuais deslocações no orçamento.</div>
       </div>
     </div>
@@ -835,26 +876,26 @@
         <div class="form-row">
           <div class="form-group">
             <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="O seu nome" required />
+            <input type="text" id="nome" name="nome" autocomplete="name" placeholder="O seu nome" required />
           </div>
           <div class="form-group">
             <label for="empresa">Empresa / Negócio</label>
-            <input type="text" id="empresa" placeholder="Nome do negócio" />
+            <input type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Nome do negócio" />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="email@exemplo.com" required />
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="email@exemplo.com" required />
           </div>
           <div class="form-group">
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" placeholder="+351 9xx xxx xxx" />
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="tel" placeholder="+351 9xx xxx xxx" />
           </div>
         </div>
         <div class="form-group">
           <label for="servico">Serviço de Interesse</label>
-          <select id="servico">
+          <select id="servico" name="servico">
             <option value="">Selecione um serviço</option>
             <option>Vídeo Promocional</option>
             <option>Fotografia Profissional</option>
@@ -868,7 +909,7 @@
         </div>
         <div class="form-group">
           <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" rows="5" placeholder="Fale-nos um pouco sobre o seu negócio e o que procura..."></textarea>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Fale-nos um pouco sobre o seu negócio e o que procura..."></textarea>
         </div>
         <button type="submit" class="btn-submit">Enviar Mensagem →</button>
         <div class="form-success" id="formSuccess">✓ Mensagem enviada! Entramos em contacto em breve.</div>
@@ -948,8 +989,16 @@
 
   // MOBILE NAV
   const navToggle = document.getElementById('navToggle');
-  navToggle.addEventListener('click', () => nav.classList.toggle('menu-open'));
-  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => nav.classList.remove('menu-open')));
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('menu-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('menu-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Abrir menu');
+  }));
 
   // VIDEO MODAL
   const videoItems = document.querySelectorAll('.video-item[data-video]');
@@ -957,21 +1006,42 @@
   const iframe = document.getElementById('modalIframe');
   const closeBtn = document.getElementById('modalClose');
   videoItems.forEach(item => {
-    item.addEventListener('click', () => {
+    const openVideo = () => {
       iframe.src = item.dataset.video + '?autoplay=1';
       modal.classList.add('active');
+      closeBtn.focus();
+    };
+    item.addEventListener('click', openVideo);
+    item.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openVideo();
+      }
     });
   });
   closeBtn.addEventListener('click', () => { modal.classList.remove('active'); iframe.src = ''; });
   modal.addEventListener('click', e => { if (e.target === modal) { modal.classList.remove('active'); iframe.src = ''; } });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      iframe.src = '';
+    }
+  });
 
   // FAQ
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
       const item = q.parentElement;
       const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!wasOpen) item.classList.add('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        const button = i.querySelector('.faq-q');
+        if (button) button.setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        q.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 
